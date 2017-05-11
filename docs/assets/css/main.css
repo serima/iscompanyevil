@@ -1,0 +1,86 @@
+/*
+** main.css
+*/
+html, body{
+    margin: 0;
+}
+body{
+    color: #444;
+    font-size: 13px;
+}
+body *{
+    box-sizing: border-box;
+}
+h1{
+    margin: 0;
+    font-size: 16px;
+}
+th, td{
+    padding: 4px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    margin: 4px 0;
+}
+
+.fs-l{
+    font-size: 16px;
+}
+
+.bolder{
+    font-weight: bold;
+}
+.sub-info{
+    color: #888;
+}
+.text-danger{
+    color: #F00;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+
+.form-group{
+    padding: 10px 0;
+}
+.form-group input[type=text]{
+    border: 1px solid #dde4e6;
+    border-radius: 2px;
+    padding: 6px 10px;
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
+
+.list-table{
+    border-collapse: collapse;
+}
+.list-table > tr > td{
+    border: solid 1px #000000;
+}
+
+.header{
+    padding: 10px;
+    border-bottom: 1px solid #888;
+}
+.container{
+    max-width: 420px;
+    min-height: 480px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.footer{
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #888;
+}
