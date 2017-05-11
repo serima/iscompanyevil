@@ -1,1 +1,43 @@
-index
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <title>ブラック企業確認くん</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/data.js"></script>
+</head>
+<body>
+<div class="header">
+    <h1>ブラック企業確認くん</h1>
+</div>
+<div class="container">
+    <div class="form-group">
+        <input class="js-searchbox" type="text" placeholder="まだ検索はできないよ">
+    </div>
+    <table class="list-table js-company-table"></table>
+    <script id="js-template-company-table-tr" type="text/x-html-template">
+        <tr></tr>
+    </script>
+    <script id="js-template-company-table-td" type="text/x-html-template">
+        <td></td>
+    </script>
+    <script id="js-template-company-table-card" type="text/x-html-template">
+        <ul>
+        	<li class="bolder fs-l" data-element="name"></li>
+        	<li data-element="address"></li>
+        	<li data-element="publishedAt"></li>
+        	<li data-element="violation"></li>
+        	<li class="text-danger" data-element="description"></li>
+        	<li data-element="note"></li>
+        </ul>
+    </script>
+</div>
+<div class="footer">
+    <span class="sub-info">Copyright 2017</span> Not Evil Just White
+</div>
+</body>
+</html>
